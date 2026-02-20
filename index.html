@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiscal Blocks | Modern Fintech</title>
+  <meta name="description" content="Fiscal Blocks is a modern fintech website with budgeting, analytics, payments, and AI assistance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/02/20/05/20260220052604-6FTJT3SW.js" defer></script>
+    
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">Fiscal <span>Blocks</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-tag">All-in-one fintech platform</p>
+          <h1>Smarter money moves with <span>Fiscal Blocks</span></h1>
+          <p class="hero-copy">
+            Track spending, send secure payments, and plan goals with simple dashboards made for daily life and growing businesses.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary">Get Started</a>
+            <a href="#how" class="btn btn-secondary">See Demo</a>
+          </div>
+          <div class="hero-points">
+            <span>Bank-grade security</span>
+            <span>Real-time insights</span>
+            <span>24/7 support</span>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <h2>Quick Finance Snapshot</h2>
+          <div class="snapshot-row">
+            <p>Monthly Income</p>
+            <strong>$8,500</strong>
+          </div>
+          <div class="snapshot-row">
+            <p>Smart Savings</p>
+            <strong>$2,140</strong>
+          </div>
+          <div class="snapshot-row">
+            <p>Invested</p>
+            <strong>$12,700</strong>
+          </div>
+          <div class="snapshot-row">
+            <p>Goal Progress</p>
+            <strong>68%</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section light">
+      <div class="container">
+        <h2 class="section-title">Features Built for Everyday Finance</h2>
+        <div class="grid-4">
+          <article class="card reveal">
+            <h3>Smart Budgeting</h3>
+            <p>Auto-categorize expenses and keep monthly spending under control.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Live Analytics</h3>
+            <p>Understand trends with clear charts and weekly money reports.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Secure Payments</h3>
+            <p>Send and receive money with encryption and instant verification.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Task Automation</h3>
+            <p>Set rules to save, split bills, and schedule recurring transfers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+          <article class="step reveal">
+            <span>1</span>
+            <h3>Connect Accounts</h3>
+            <p>Add your bank and card accounts securely in one place.</p>
+          </article>
+          <article class="step reveal">
+            <span>2</span>
+            <h3>Track and Plan</h3>
+            <p>View spending, create budgets, and set future goals.</p>
+          </article>
+          <article class="step reveal">
+            <span>3</span>
+            <h3>Improve Daily</h3>
+            <p>Use AI tips to reduce waste and improve savings each month.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="estimator">
+      <div class="container estimator-wrap reveal">
+        <div>
+          <h2 class="section-title left">Loan EMI Estimator</h2>
+          <p>Try this simple calculator to estimate monthly loan payments.</p>
+        </div>
+        <form class="estimator-form" id="emiForm" novalidate>
+          <label for="loanAmount">Loan Amount ($)</label>
+          <input type="number" id="loanAmount" min="100" required />
+
+          <label for="loanRate">Annual Interest (%)</label>
+          <input type="number" id="loanRate" min="0.1" step="0.1" required />
+
+          <label for="loanYears">Years</label>
+          <input type="number" id="loanYears" min="1" required />
+
+          <button class="btn btn-primary" type="submit">Calculate EMI</button>
+          <p id="emiResult" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-title">Simple Pricing</h2>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price">$0<span>/month</span></p>
+            <ul>
+              <li>Basic budgeting tools</li>
+              <li>2 linked accounts</li>
+              <li>Email support</li>
+            </ul>
+            <button class="btn btn-secondary">Choose Plan</button>
+          </article>
+
+          <article class="price-card featured reveal">
+            <p class="label">Most Popular</p>
+            <h3>Growth</h3>
+            <p class="price">$19<span>/month</span></p>
+            <ul>
+              <li>Unlimited linked accounts</li>
+              <li>Advanced analytics</li>
+              <li>Automation rules</li>
+            </ul>
+            <button class="btn btn-primary">Choose Plan</button>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Scale</h3>
+            <p class="price">$49<span>/month</span></p>
+            <ul>
+              <li>Team collaboration</li>
+              <li>Priority support</li>
+              <li>API integrations</li>
+            </ul>
+            <button class="btn btn-secondary">Choose Plan</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Users Say</h2>
+        <div class="grid-3">
+          <article class="card reveal">
+            <p>“Finally, a finance app that is clean, fast, and easy to understand.”</p>
+            <h4>Aarav M.</h4>
+          </article>
+          <article class="card reveal">
+            <p>“The budgeting and alerts helped me save more in 3 months.”</p>
+            <h4>Nia K.</h4>
+          </article>
+          <article class="card reveal">
+            <p>“Our startup uses Fiscal Blocks to track spending across teams.”</p>
+            <h4>Leo R.</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq-wrap">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <article class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Is Fiscal Blocks secure?</button>
+          <p class="faq-a">Yes, data is encrypted in transit and at rest with industry standard protection.</p>
+        </article>
+
+        <article class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can I use it for business expenses?</button>
+          <p class="faq-a">Yes, you can tag, group, and export expenses for personal and business use.</p>
+        </article>
+
+        <article class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Do you support automated savings?</button>
+          <p class="faq-a">Yes, you can create custom rules to transfer money into savings goals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section light">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title left">Contact Fiscal Blocks</h2>
+          <p>Have questions? Send us a message and we will respond soon.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Full Name</label>
+          <input id="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Fiscal Blocks. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#top">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Zaimu AI custom launcher button (theme only) -->
+  <button id="zaimuLauncher" class="zaimu-launcher" aria-label="Open Zaimu AI chatbot">
+    Zaimu AI
+  </button>
+
+  <!-- Third-party chatbot mount point -->
+  <div id="zaimuChatContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
